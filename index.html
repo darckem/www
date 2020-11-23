@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Pretoria</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Reclutamiento</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Clientes</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas exercitationem doloremque molestiae magni cumque quo accusantium accusamus reprehenderit? Ipsa repellendus magni beatae officiis nam voluptates, corporis illo excepturi autem.
+                Recusandae!
+            </p>
+            <a href="#" class="btn">Our Menu</a>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>
