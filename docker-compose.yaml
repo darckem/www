@@ -1,5 +1,5 @@
 web:
-  image: nginx:alpine
+  image: nginx
   ports:
     - "80:80"
   #working_dir: /var/www
