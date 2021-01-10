@@ -7,7 +7,10 @@
     scroll-behavior: smooth;
     font-size: 12;
 }
-
+body {
+  background: #F1F1F1;
+  transition: .3s ease all;
+}
 /* primary section */
 .primary {
     position: relative;
@@ -55,12 +58,29 @@
     bottom: 0;
     height: 90%;
     right: 100px;
-} 
+}
+
+/* Animación */
+.animado {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0% { transform: translateY(60px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
 /* primary section */
 
 section{
     padding: 100px;
-    background: #F6F7EB;
+    background: #333333;
+    /*background: #F6F7EB;*/
 }
 
 .row{
